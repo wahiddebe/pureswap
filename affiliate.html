@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pure Swap</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/logo-nav.svg"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="affiliate.html">Affiliate Program</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blogs.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul><button class="btn btn-primary btn-sm" type="button">Login</button>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 p-4 p-lg-7" style="background: url(&quot;assets/img/BG-HERO-LANDING.svg&quot;) bottom / contain no-repeat;">
+        <div class="d-flex flex-column gap-4 flex-lg-row mb-4_5">
+            <div class="d-flex flex-column col-lg-6">
+                <div class="d-flex align-items-center gap-2 mb-4"><img src="assets/img/logo.svg">
+                    <h1 class="text-uppercase text-primary fs-6_5">swap crypto with Pure swap</h1>
+                </div>
+                <div class="mb-4">
+                    <h1 class="display-2 mb-4" style="letter-spacing: 0;"><span class="hero-heading-gradient">Affiliate</span>&nbsp;– Referrals That Pay Forever&nbsp;</h1>
+                    <p class="fs-6_5">Share your link and <span class="text-heading">earn up to 40% commission across three referral levels </span>&nbsp;on every exchange activity your referrals make. Boost your trading volume to rise through tiers for higher payouts. Join now to build a lifelong profit stream.</p>
+                </div><button class="btn btn-primary align-self-stretch align-self-lg-start" type="button">Become an Affiliate</button>
+            </div>
+            <div class="position-relative flex-grow-1"><img class="img-fluid" width="591" height="523" src="assets/img/aff-bg-hero.png">
+                <div class="position-absolute top-0 d-flex w-100 h-100 flex-column justify-content-end align-items-start">
+                    <div class="bg-white rounded-4 d-flex z-3 align-items-center gap-4 p-4" style="box-shadow: 0px 16px 24px rgba(0,0,0,0.08);">
+                        <div>
+                            <p class="mb-2 fw-medium">Commission Balance</p>
+                            <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="24" height="24" src="assets/img/dashboard/Coin%20Logo.svg">
+                                <h1 class="fs-4">12,147.82<span style="opacity: 0.20;">&nbsp;USDT</span></h1>
+                            </div>
+                        </div><a class="btn btn-primary btn-sm" role="button" href="withdraw.html">Withdraw</a>
+                    </div>
+                    <div class="bg-white rounded-4 d-flex align-self-end gap-4 p-4" style="box-shadow: 0px 16px 24px rgba(0,0,0,0.04);margin-top: -20px;">
+                        <div><span class="mb-2 fs-8">Exchange Volume</span>
+                            <h1 class="fs-6_5">$571,471.54</h1>
+                        </div>
+                        <div><span class="mb-2 fs-8">Last Commission</span>
+                            <h1 class="fs-6_5">$34.78</h1>
+                        </div>
+                        <div><span class="mb-2 fs-8">Total Referrals</span>
+                            <h1 class="fs-6_5">52</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row gy-3 mb-4_5">
+                <div class="col-12 col-lg-4">
+                    <div class="bg-white rounded-4 d-flex h-100 flex-column align-items-start p-4_5 gap-4_5" style="box-shadow: 0px 16px 24px rgba(0,0,0,0.04);">
+                        <div><img src="assets/img/3d-icons-82%201.svg" width="156" height="156"></div>
+                        <div>
+                            <h1 class="fs-5 mb-3">Lifetime Commissions</h1>
+                            <p>Earn 25% or more on every swap your referrals complete, with no limits—endless passive income that grows with your network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-white rounded-4 d-flex h-100 flex-column align-items-start p-4_5 gap-4_5" style="box-shadow: 0px 16px 24px rgba(0,0,0,0.04);">
+                        <div><img src="assets/img/metaverse-crypto-3d-icon-metaverse%201.png" width="156" height="156"></div>
+                        <div>
+                            <h1 class="fs-5 mb-3">Cross-Chain Swaps</h1>
+                            <p>Cash in on referrals for swaps across any blockchain—BTC, ETH, and more—tapping into the limitless potential of cross-chain trading.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-white rounded-4 d-flex h-100 flex-column align-items-start p-4_5 gap-4_5" style="box-shadow: 0px 16px 24px rgba(0,0,0,0.04);">
+                        <div><img src="assets/img/3d-gold-crown-icon-isolated-white-render-golden-crown-emoji-symbol-emoticon-vip-rich-winner-luxury-premium-success-customer-feedback-rating-status-signs-realistic-vector-illustration%201.svg" width="156" height="156"></div>
+                        <div>
+                            <h1 class="fs-5 mb-3">Tiered Earnings</h1>
+                            <p>Unlock premium rewards by boosting referral volume, climbing SmartSwap’s tiers for richer payouts and exclusive benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-stretch align-items-lg-center">
+                <div class="text-center border rounded-pill d-flex gap-2 px-3 py-2 bg-weak text-heading">
+                    <p class="fs-medium fs-6_5">Join 1,000+ affiliates already earning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-7">
+            <h5 class="text-uppercase text-primary mb-3 fs-6_5">why affiliate</h5>
+            <h1 class="display-3 mb-4 col-lg-9">Why Join our Affiliate Program?</h1>
+            <p class="col-lg-8">It’s more than just earning commissions—it’s about being part of a community shaping the future of cross-chain exchanges. Here’s what you’ll gain as a Pure Swap affiliate:</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-12">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-center" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%2036-1.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 49%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20362.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20363.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20364.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20365.svg" style="margin-top: -120px;"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-7">
+            <h5 class="text-uppercase text-primary mb-3 fs-6_5">pure swap tiers</h5>
+            <h1 class="display-3 mb-4 col-lg-10">Unlock Tiers, Elevate Your Income</h1>
+            <p class="col-lg-8">Refer more swap volume to reach higher tiers, earning greater commissions on every exchange. Grow your network, unlock rewards, and stack more crypto.</p>
+        </div>
+        <div class="d-flex d-lg-none flex-column align-items-stretch gap-4_5">
+            <div class="d-flex flex-column gap-4">
+                <div class="bg-white rounded-4 d-flex w-100 justify-content-center align-items-center p-4_5" style="box-shadow: 0px 8.314px 16.627px 0px rgba(0, 0, 0, 0.04);min-height: 324px;background: url(&quot;assets/img/spot-aff.svg&quot;) top / 100% no-repeat;"><img class="img-fluid" width="267" height="288" src="assets/img/starter.svg"></div>
+                <div class="rounded-4 p-4 bg-weak">
+                    <div class="d-flex align-items-center gap-3 mb-5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 fs-6_5 fw-medium text-primary-2" style="width: 40px;height: 40px;">01</span>
+                        <p class="text-uppercase text-heading fs-6_5 fw-medium">starter</p>
+                    </div>
+                    <div>
+                        <h1 class="fs-4 mb-3">$0-$500K</h1>
+                        <p>Kick off your journey with 5% commissions on all referral swaps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-4">
+                <div class="bg-white rounded-4 d-flex w-100 justify-content-center align-items-center p-4_5" style="box-shadow: 0px 8.314px 16.627px 0px rgba(0, 0, 0, 0.04);min-height: 324px;background: url(&quot;assets/img/spot-aff.svg&quot;) top / 100% no-repeat;"><img class="img-fluid" width="309" height="309" src="assets/img/pro.svg"></div>
+                <div class="rounded-4 p-4 bg-weak">
+                    <div class="d-flex align-items-center gap-3 mb-5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 fs-6_5 fw-medium text-primary-2" style="width: 40px;height: 40px;">02</span>
+                        <p class="text-uppercase text-heading fs-6_5 fw-medium">PRO</p>
+                    </div>
+                    <div>
+                        <h1 class="fs-4 mb-3">$100K-$250K</h1>
+                        <p>Level up with an extra 10% commission on referral swaps and 0.5% drops on your exchanges to unlock more features.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-4">
+                <div class="bg-white rounded-4 d-flex w-100 justify-content-center align-items-center p-4_5" style="box-shadow: 0px 8.314px 16.627px 0px rgba(0, 0, 0, 0.04);min-height: 324px;background: url(&quot;assets/img/spot-aff.svg&quot;) top / 100% no-repeat;"><img class="img-fluid" width="309" height="309" src="assets/img/elite.svg"></div>
+                <div class="rounded-4 p-4 bg-weak">
+                    <div class="d-flex align-items-center gap-3 mb-5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 fs-6_5 fw-medium text-primary-2" style="width: 40px;height: 40px;">03</span>
+                        <p class="text-uppercase text-heading fs-6_5 fw-medium">ELITE</p>
+                    </div>
+                    <div>
+                        <h1 class="fs-4 mb-3">$500K+</h1>
+                        <p>Shine with an additional 5% commission on referral swaps and 1% drops on your exchanges for maximum platform benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-flex gap-4">
+            <div class="accordion border-0 d-flex flex-column gap-3 col-lg-8 accordion-aff" role="tablist" id="accordion-1">
+                <div class="accordion-item border-0 bg-weak">
+                    <h2 class="accordion-header bg-weak" role="tab"><button class="accordion-button accordion-button-aff" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" onclick="affImage(&#39;starterLogo&#39;)" logo-id="starterLogo"><span class="d-flex align-items-center gap-3 fs-6_5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 text-primary-2" style="width: 40px;height: 40px;">01</span><span class="text-uppercase">starter</span></span></button></h2>
+                    <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body">
+                            <h1 class="fs-2 mb-3 title">$0-$500K</h1>
+                            <p class="mb-0 text-sub-500">Kick off your journey with 5% commissions on all referral swaps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 bg-weak">
+                    <h2 class="accordion-header bg-weak" role="tab"><button class="accordion-button collapsed accordion-button-aff" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2" logo-id="proLogo"><span class="d-flex align-items-center gap-3 fs-6_5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 text-primary-2" style="width: 40px;height: 40px;">02</span><span class="text-uppercase">Pro</span></span></button></h2>
+                    <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body">
+                            <h1 class="fs-2 mb-3 title">$100K-$250K</h1>
+                            <p class="mb-0 text-sub-500">Level up with an extra 10% commission on referral swaps and 0.5% drops on your exchanges to unlock more features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 bg-weak">
+                    <h2 class="accordion-header bg-weak" role="tab"><button class="accordion-button collapsed accordion-button-aff" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3" logo-id="eliteLogo"><span class="d-flex align-items-center gap-3 fs-6_5"><span class="bg-white rounded-circle d-flex justify-content-center align-items-center p-2 text-primary-2" style="width: 40px;height: 40px;">03</span><span class="text-uppercase">elite</span></span></button></h2>
+                    <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body">
+                            <h1 class="fs-2 mb-3 title">$500K+</h1>
+                            <p class="mb-0 text-sub-500">Shine with an additional 5% commission on referral swaps and 1% drops on your exchanges for maximum platform benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-4 d-flex w-100 justify-content-center align-items-center p-4_5" style="box-shadow: 0px 8.314px 16.627px 0px rgba(0, 0, 0, 0.04);background: url(&quot;assets/img/spot-aff.svg&quot;) top / 100% no-repeat;"><img class="img-fluid" width="267" height="288" id="starterLogo" src="assets/img/starter.svg"><img class="img-fluid d-none" width="309" height="309" id="proLogo" src="assets/img/pro.svg"><img class="img-fluid d-none" width="309" height="309" id="eliteLogo" src="assets/img/elite.svg"></div>
+        </div>
+    </section>
+    <div class="text-center d-flex flex-column justify-content-center align-items-stretch gap-4 p-4 p-lg-7 mb-5 mb-lg-7" style="background: url(&quot;assets/img/bg-squares.svg&quot;) bottom / auto no-repeat, #1A1A1A;">
+        <div class="rounded-4 position-relative p-0 p-lg-3" style="background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));filter: blur(13);backdrop-filter: blur(13px);-webkit-backdrop-filter: blur(13px);">
+            <div class="position-relative d-flex z-3 flex-column gap-5 flex-lg-row p-4">
+                <div class="text-start col-lg-8">
+                    <div class="d-flex flex-column align-items-start gap-5 flex-lg-row mb-4">
+                        <div>
+                            <h1 class="text-white mb-3 fs-6_5">Transaction Volume</h1>
+                            <h1 class="display-5 text-white">$<span id="input-range-text">10</span></h1>
+                        </div>
+                        <div>
+                            <h1 class="text-white mb-3 fs-6_5">Fee Commission</h1>
+                            <h1 class="display-5 text-white"><span>7</span>%</h1>
+                        </div>
+                    </div><input class="w-100" type="range" id="input-range" min="0" max="100" step="1" value="10">
+                    <div class="d-flex w-100 justify-content-between align-items-center">
+                        <h1 class="text-white fs-6_5">$0</h1>
+                        <h1 class="text-white fs-6_5">$100</h1>
+                    </div>
+                </div>
+                <div class="border-white d-block d-lg-none border-bottom"></div>
+                <div class="border-white d-none d-lg-block border-end"></div>
+                <div class="d-flex flex-column">
+                    <h1 class="text-start text-white mb-3 fs-6_5">Transaction Volume</h1>
+                    <h1 class="display-5 text-start text-white mb-4">$<span id="input-range-text-1">10</span></h1><a class="btn btn-primary" role="button" href="signUp-1.html">Sign up now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-4_5">
+            <h5 class="text-uppercase text-primary mb-3 fs-6_5">tools</h5>
+            <h1 class="display-3 mb-4 col-lg-8">Tools For Your Success</h1>
+            <p class="col-lg-8">We’ve equipped you with everything you need to thrive as a Pure Swap affiliate. These powerful tools are designed to fit your style and scale your earnings. Choose what works for you and start building your crypto empire.</p>
+        </div>
+        <div>
+            <div class="bg-white rounded-3 d-flex overflow-x-scroll justify-content-between align-items-center flex-nowrap p-4 mb-4_5" style="min-height: 190px;">
+                <div class="text-center d-flex flex-column flex-shrink-0 align-items-center gap-2 flex-md-shrink-1"><img class="img-fluid" width="84" height="72" src="assets/img/dashboard/Frame%201000006261%20(2).svg">
+                    <h1 class="fs-6_5">Create Link</h1>
+                    <p class="fs-8">Use main affiliate link or create individual links for each campaign</p>
+                </div>
+                <div class="rounded-3 d-flex flex-shrink-0 justify-content-center align-items-center flex-md-shrink-1 p-2 bg-weak bg-weak"><img class="img-fluid" width="18" height="18" src="assets/img/dashboard/chevron-right.svg"></div>
+                <div class="text-center d-flex flex-column flex-shrink-0 align-items-center gap-2 flex-md-shrink-1"><img class="img-fluid" width="73" height="72" src="assets/img/dashboard/Frame%201000006261%20(1).svg">
+                    <h1 class="fs-6_5">Drive Traffic</h1>
+                    <p class="fs-8">Share and place the links on your marketing channels and invite users</p>
+                </div>
+                <div class="rounded-3 d-flex flex-shrink-0 justify-content-center align-items-center flex-md-shrink-1 p-2 bg-weak bg-weak"><img class="img-fluid" width="18" height="18" src="assets/img/dashboard/chevron-right.svg"></div>
+                <div class="text-center d-flex flex-column flex-shrink-0 align-items-center gap-2 flex-md-shrink-1"><img class="img-fluid" width="73" height="72" src="assets/img/dashboard/Frame%201000006261.svg">
+                    <h1 class="fs-6_5">Get Commission</h1>
+                    <p class="fs-8">Receive commission on exchanges you and your team refer</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row gx-4 gy-4">
+                <div class="col-12 col-lg-3">
+                    <div class="border rounded-4 d-flex flex-column align-items-start p-4 gap-4_5">
+                        <div class="rounded-3 p-3 bg-weak"><img class="img-fluid" width="24" height="24" src="assets/img/link.svg"></div>
+                        <div>
+                            <h1 class="mb-2 fs-6_5">Multiple Referral Links</h1>
+                            <p class="fs-7">Create multiple unique links to track your campaigns across platforms—share on social media, forums, or emails. Every swap via your links fuels your commissions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="border rounded-4 d-flex flex-column align-items-start p-4 gap-4_5">
+                        <div class="rounded-3 p-3 bg-weak"><img class="img-fluid" width="24" height="24" src="assets/img/device-laptop.svg"></div>
+                        <div>
+                            <h1 class="mb-2 fs-6_5">Smart Analytics Dashboard</h1>
+                            <p class="fs-7">Track referrals, commissions, and tier progress in real-time with an intuitive dashboard. Leverage insights to refine your strategy and skyrocket your earnings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="border rounded-4 d-flex flex-column align-items-start p-4 gap-4_5">
+                        <div class="rounded-3 p-3 bg-weak"><img class="img-fluid" width="18" height="18" src="assets/img/arrows-exchange-2.svg"></div>
+                        <div>
+                            <h1 class="mb-2 fs-6_5">Swap Widget (coming soon)</h1>
+                            <p class="fs-7">Add our customizable widget to your site or blog for seamless crypto swaps. Easy to embed, it turns visitors’ swaps into your commission-generating opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="border rounded-4 d-flex flex-column align-items-start p-4 gap-4_5">
+                        <div class="rounded-3 p-3 bg-weak"><img class="img-fluid" width="24" height="24" src="assets/img/shape.svg"></div>
+                        <div>
+                            <h1 class="mb-2 fs-6_5">API Integration (coming soon)</h1>
+                            <p class="fs-7">Developers: Embed our API in your app or platform to offer cross-chain swaps. Earn commissions on every user swap, seamlessly integrated into your ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-4_5">
+            <h5 class="text-primary mb-3 fs-6_5">FAQs</h5>
+            <h1 class="display-3 col-lg-8">You Got Questions? We Got Answers!</h1>
+        </div>
+        <div class="mb-4_5">
+            <div class="accordion border-0 d-flex flex-column gap-4" role="tablist" id="accordion-2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="true" aria-controls="accordion-2 .item-1">What is SmartSwap?</button></h2>
+                    <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Do I need to create an account to use SmartSwap?</button></h2>
+                    <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">How does SmartSwap work?</button></h2>
+                    <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Is SmartSwap secure?</button></h2>
+                    <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-5" aria-expanded="false" aria-controls="accordion-2 .item-5">How do I trade on SmartSwap</button></h2>
+                    <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="mb-3 fs-6_5 text-heading fw-medium">Have more question in mind?</p><button class="btn btn-sm btn-outline-soft-200 text-heading" type="button">See all FAQs</button>
+        </div>
+    </section>
+    <footer class="d-flex flex-column p-4 p-lg-7 gap-4 gap-lg-7 footer-swap">
+        <div>
+            <div class="row gy-3 gy-lg-0">
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons.svg">
+                            <p>X/Twitter</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-1.svg">
+                            <p>YouTube</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-2.svg">
+                            <p>Discord</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-3.svg" width="21" height="20">
+                            <p>Telegram</p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="row gy-3 gy-lg-0">
+            <div class="col-lg-3">
+                <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+        </div>
+        <hr class="m-0 bg-soft-200">
+        <div class="d-flex flex-column gap-4_5">
+            <div>
+                <p class="fw-semibold mb-3 fs-6_5 text-heading">Convert</p>
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="fw-semibold mb-3 fs-6_5 text-heading">Exchange Pairs</p>
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center text-sub-500">
+            <div class="d-flex align-items-center gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Legal</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Terms of Use</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Privacy Policy</a></div>
+            <p class="fs-6 text-sub-500 fw-medium">© 2025 Pure Swap. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

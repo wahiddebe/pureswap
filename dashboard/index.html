@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ps-tes</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div class="cashback-notif">
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <div class="devider-nav"></div>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                    <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
+                                <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
+                        </div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div>
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <ul class="navbar-nav my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fund-analysis.html">Fund Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="referal.html">Referral</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
+        <div class="bg-white rounded-4 d-flex flex-column justify-content-between align-items-stretch flex-lg-row align-items-lg-center p-2 mb-4">
+            <div class="p-3">
+                <h1 class="fs-6 mb-3 fw-medium">Available Drops</h1>
+                <div class="d-flex align-items-center gap-2 fw-medium"><img class="img-fluid" width="25" height="24" src="../assets/img/droplet.svg"><span class="text-heading">3.7</span><a class="btn btn-primary px-3 py-2 fs-7" role="button" href="fund-analysis.html">Perform Fund Analysis</a></div>
+            </div>
+            <div class="border rounded-4 d-flex flex-column align-items-start flex-lg-row align-items-lg-center p-0"><img src="../assets/img/3d-realistic-yellow-locked-padlock-vector-illustration%201.svg">
+                <div class="pe-lg-3 px-3 px-lg-0 py-3">
+                    <h1 class="fs-6 fw-medium">2-Step Authentication</h1>
+                    <p class="fs-7">2FA boosts security, adding an extra layer to prevent unauthorized access.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row gy-3">
+                <div class="col-12 col-lg-5">
+                    <div class="bg-white border rounded-4 border-1 border-soft-200">
+                        <div class="p-4 border-bottom">
+                            <h1 class="fs-6_5 text-sub-500">Exchange</h1>
+                        </div>
+                        <div class="p-4">
+                            <div class="position-relative d-flex flex-column justify-content-center align-items-center mb-4">
+                                <div class="row gx-2 gy-2 align-self-stretch">
+                                    <div class="col-12">
+                                        <div class="border rounded-4 p-1">
+                                            <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Send</span>
+                                                <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                                    <div>
+                                                        <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-1" src="../assets/img/coin/Coin%20Logo.svg" width="32" height="32">
+                                                            <div>
+                                                                <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                        <option value="bitcoin" selected="">BTC</option>
+                                                                        <option value="etherium">ETH</option>
+                                                                    </select>
+                                                                    <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Bitcoin</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-yellow">BTC</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="20"><span class="fw-medium">$1856105.23</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="border rounded-4 p-1">
+                                            <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Get</span>
+                                                <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                                    <div>
+                                                        <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-2" src="../assets/img/coin/Coin%20Logo-1.svg" width="32" height="32">
+                                                            <div>
+                                                                <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                        <option value="bitcoin">BTC</option>
+                                                                        <option value="etherium" selected="">ETH</option>
+                                                                    </select>
+                                                                    <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Ethereum</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-blue">ETH</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="1002.728"><span class="fw-medium">$1796133.90</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute d-flex justify-content-center align-items-center">
+                                    <div class="rounded-2 p-2 bg-weak"><img class="img-fluid d-none d-lg-block" width="25" height="24" src="../assets/img/arrow-swap.svg"><img class="img-fluid d-block d-lg-none" width="18" height="18" src="../assets/img/dashboard/chevron-right.svg" style="transform: rotate(90deg);"></div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="mb-2"></div>
+                                <div class="rounded-3 d-flex justify-content-between align-items-center gap-3 px-3 py-2 bg-weak fw-medium"><span class="my-1">Exchange Rate</span>
+                                    <div class="d-flex align-items-center"><span>1 BTC</span><span>&nbsp;=&nbsp;</span><span>52,47 ETH</span></div>
+                                </div>
+                            </div>
+                            <div class="exchange-tab">
+                                <ul class="nav nav-tabs text-center border-0 d-flex justify-content-between align-items-stretch p-1 mb-4 bg-weak" role="tablist">
+                                    <li class="nav-item flex-grow-1" role="presentation"><a class="nav-link active fs-6" role="tab" data-bs-toggle="tab" href="#tab-3">Fixed Rate</a></li>
+                                    <li class="nav-item flex-grow-1" role="presentation"><a class="nav-link fs-6" role="tab" data-bs-toggle="tab" href="#tab-4">Float Rate</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                        <form class="d-flex flex-column gap-4">
+                                            <div class="form-check fs-6 fw-medium text-heading"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Instantly delete order details once completed</label></div>
+                                            <div class="accordion" role="tablist" id="accordion-1">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-6 fw-medium exchange" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1" style="color: #525866;">Transaction Details</button></h2>
+                                                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                                        <div class="accordion-body">
+                                                            <div class="d-flex flex-column gap-4">
+                                                                <div class="d-flex flex-column gap-3">
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>You Send</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg"><span>Bitcoin</span><span class="rounded-2 px-2 py-1 bg-coin-badge coin-badge-yellow fs-8 fw-medium">BTC</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Exchange rate</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><span>1 BTC ≈ 81,451.61374 ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Service Fee</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>8,257.03 ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Network Fee</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>0.001 ETH</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="border border-bottom-1 border-soft-200"></div>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>You get</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>8,257.03 ETH</span><span class="rounded-2 px-2 py-1 bg-coin-badge coin-badge-yellow fs-8 fw-medium">ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Cashback</span>
+                                                                        <div class="d-flex align-items-center gap-2 fw-medium text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/droplet.svg"><span>0.5</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="overflow-hidden"><img width="1216" height="2" src="../assets/img/dashboard/Vector%2021.svg"></div>
+                                            <div class="d-flex flex-column align-items-stretch"><a class="btn btn-primary" role="button" href="exchange-2.html" data-bs-target="#modal-1" data-bs-toggle="modal">Continue</a></div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="tab-4">
+                                        <form class="d-flex flex-column gap-4">
+                                            <div class="form-check fs-6 fw-medium text-heading"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Instantly delete order details once completed</label></div>
+                                            <div class="accordion" role="tablist" id="accordion-2">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-6 fw-medium exchange" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1" style="color: #525866;">Transaction Details</button></h2>
+                                                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2">
+                                                        <div class="accordion-body">
+                                                            <div class="d-flex flex-column gap-4">
+                                                                <div class="d-flex flex-column gap-3">
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>You Send</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg"><span>Bitcoin</span><span class="rounded-2 px-2 py-1 bg-coin-badge coin-badge-yellow fs-8 fw-medium">BTC</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Exchange rate</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><span>1 BTC ≈ 81,451.61374 ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Service Fee</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>8,257.03 ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Network Fee</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>0.001 ETH</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="border border-bottom-1 border-soft-200"></div>
+                                                                <div class="d-flex flex-column gap-3">
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>You get</span>
+                                                                        <div class="d-flex align-items-center gap-2 text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/coin/Coin%20Logo-1.svg"><span>8,257.03 ETH</span><span class="rounded-2 px-2 py-1 bg-coin-badge coin-badge-yellow fs-8 fw-medium">ETH</span></div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-between align-items-center flex-sm-row"><span>Cashback</span>
+                                                                        <div class="d-flex align-items-center gap-2 fw-medium text-heading"><img class="img-fluid" width="25" height="24" src="../assets/img/droplet.svg"><span>0.5</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="overflow-hidden"><img width="1216" height="2" src="../assets/img/dashboard/Vector%2021.svg"></div>
+                                            <div class="d-flex flex-column align-items-stretch"><a class="btn btn-primary" role="button" href="exchange-2.html" data-bs-target="#modal-1" data-bs-toggle="modal">Continue</a></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="bg-white border rounded-4 border-1 border-soft-200">
+                        <div class="p-4 border-bottom">
+                            <h1 class="fs-6_5 text-sub-500">Do more with Pure Swap</h1>
+                        </div>
+                        <div class="p-4">
+                            <div class="border rounded-3 d-flex flex-column gap-3 flex-lg-row p-3 p-lg-2 mb-4 gap-lg-0">
+                                <div class="rounded-3 d-flex justify-content-center align-items-center bg-weak" style="padding: 54px;"><img class="img-fluid" width="64" height="64" src="../assets/img/tele.svg"></div>
+                                <div class="d-flex flex-column align-items-stretch gap-3 flex-lg-row align-items-lg-center px-0 px-lg-4">
+                                    <div>
+                                        <h1 class="fs-4 mb-2">Join our Telegram channel</h1>
+                                        <p class="fw-medium">Subscribe to our Telegram channel to receive the latest updates on SmartSwap</p>
+                                    </div><button class="btn btn-outline-primary text-nowrap px-3 py-2 fs-7" type="button">Join Now</button>
+                                </div>
+                            </div>
+                            <div class="row gx-4 gy-4">
+                                <div class="col-12 col-lg-6">
+                                    <div class="border rounded-4 d-flex flex-column align-items-stretch align-items-lg-start p-4" style="background: linear-gradient(0deg, rgba(22,22,22,0.04) 0%, rgba(22,22,22,0));"><img class="img-fluid align-self-center mb-4" width="200" height="198" src="../assets/img/dashboard/receive-money-3d-illustration-hand-hold-cash%201.svg">
+                                        <div class="mb-3">
+                                            <h1 class="fs-4 mb-2">Refer &amp; Earn</h1>
+                                            <p class="fw-medium">Take the opportunity to earn from everyone you refer. Permanently!</p>
+                                        </div><a class="btn btn-outline-primary text-nowrap px-3 py-2 fs-7" role="button" href="exchange.html">Start Referring</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="border rounded-4 d-flex flex-column align-items-stretch align-items-lg-start p-4" style="background: linear-gradient(0deg, rgba(22,22,22,0.04) 0%, rgba(22,22,22,0));"><img class="img-fluid align-self-center mb-4" width="205" height="200" src="../assets/img/dashboard/3d-bill-payment%201.svg">
+                                        <div class="mb-3">
+                                            <h1 class="fs-4 mb-2">Check your funds</h1>
+                                            <p class="fw-medium">Check the quality of your funds to verify the likelihood frozen funds.</p>
+                                        </div><a class="btn btn-outline-primary text-nowrap px-3 py-2 fs-7" role="button" href="fund-analysis.html">Check Funds</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>

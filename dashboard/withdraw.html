@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ps-tes</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div class="cashback-notif">
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <div class="devider-nav"></div>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                    <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
+                                <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
+                        </div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div>
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <ul class="navbar-nav my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fund-analysis.html">Fund Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="referal.html">Referral</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
+        <div class="d-flex justify-content-center">
+            <div class="bg-white rounded-5 p-4 mb-4 col-lg-8">
+                <div class="mb-4_5"><a class="text-decoration-none d-flex align-items-center gap-3" href="referal.html"><img src="../assets/img/arrow-left.svg">
+                        <p class="fs-4 fw-semibold text-heading">Withdraw Commission</p>
+                    </a></div>
+                <div class="text-center rounded-3 d-flex flex-column justify-content-center align-items-center p-4 mb-2" style="background: url(&quot;../assets/img/dashboard/bg-widraw.svg&quot;) bottom / contain no-repeat, rgba(62,126,255,0.02);">
+                    <p class="mb-2 fw-medium">Balance</p>
+                    <div class="d-flex align-items-center gap-2 mb-2"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/Coin%20Logo.svg">
+                        <h1 class="fs-4">12,147.82<span style="opacity: 0.20;">&nbsp;USDT</span></h1>
+                    </div>
+                    <p class="mb-2 fw-medium">ERC20</p>
+                </div>
+                <div class="rounded-4 d-flex align-items-center gap-2 p-3 mb-4" style="background: #fffbeb;"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/alert-circle.svg">
+                    <div>
+                        <p class="mb-2 fs-7 fw-medium" style="color: #78350f;">Important!</p>
+                        <p class="mb-2 fs-8" style="color: #78350f;">Please send only to USDT ERC20 address. Sending to another network will result in loss of funds.</p>
+                    </div>
+                </div>
+                <div class="rounded-4 d-flex justify-content-between align-items-center mb-4 px-3 py-4 bg-weak">
+                    <p>Blockchain</p>
+                    <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/image.svg">
+                        <p class="text-heading fw-medium">Ethereum ERC20</p>
+                    </div>
+                </div>
+                <form class="d-flex flex-column gap-4">
+                    <div><label class="form-label fs-7 text-sub-500">Destination Address</label><input class="form-control" type="email" placeholder="Enter destination address"></div>
+                    <div><label class="form-label fs-7 text-sub-500">Enter Amount</label>
+                        <div class="input-group"><span class="bg-white input-group-text"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/Coin%20Logo.svg"></span><input class="form-control border-start-0 border-end-0" type="text" placeholder="Amount to withdraw"><span class="bg-white input-group-text text-soft-400">USDT</span></div>
+                    </div><a class="text-decoration-none text-sub-500" href="#">
+                        <div class="rounded-4 d-flex justify-content-between align-items-center px-3 py-4 bg-weak">
+                            <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="20" height="20" src="../assets/img/dashboard/wallet.svg">
+                                <p class="text-heading fw-medium">No Wallet?</p>
+                                <p>Create one to get started</p>
+                            </div><img class="img-fluid" width="20" height="20" src="../assets/img/dashboard/arrow-right.svg">
+                        </div>
+                    </a>
+                    <p>By clicking the button below, I agree to the <a href="#">Terms of Use</a>&nbsp;&amp; <a href="#">Privacy Policy</a>.<span></span></p><a class="btn btn-primary" role="button" href="contact-ticket-created.html" data-bs-target="#modal-1" data-bs-toggle="modal">Continue</a>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pt-4 px-4 px-lg-4_5 pt-lg-4_5"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body text-center d-flex flex-column justify-content-center pt-0 pb-4 px-4 px-lg-4_5 gap-3 pb-lg-4_5 gap-3">
+                        <div><img src="../assets/img/dashboard/3d-flying-paper-planes%201.svg">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <p class="fs-4 text-heading fw-medium">Confirm Your Withdraw</p>
+                                <p class="col-lg-8">Please confirm your withdrawal information below.</p>
+                            </div>
+                        </div>
+                        <form class="d-flex flex-column gap-4">
+                            <div class="text-start">
+                                <div class="d-flex align-items-center gap-2 mb-2"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/image.svg"><label class="form-label mb-0 fs-7 text-sub-500">Ethereum ERC20 Address</label></div><input class="form-control" type="email" placeholder="Enter destination address" value="01x8fe8a1f8g4g6s54g8g45gr8s5s6sgr56" readonly="">
+                            </div>
+                            <div class="text-start">
+                                <div class="d-flex align-items-center gap-2 mb-2"><label class="form-label mb-0 fs-7 text-sub-500">Amount</label></div>
+                                <div class="input-group"><span class="bg-white input-group-text"><img class="img-fluid" width="24" height="24" src="../assets/img/dashboard/Coin%20Logo.svg"></span><input class="form-control border-start-0" type="text" placeholder="Amount to withdraw" value="500 USDT" readonly=""></div>
+                            </div>
+                        </form>
+                        <div class="row gy-3 gy-lg-0 pt-0 pt-lg-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-outline-soft-200 text-heading" type="button" data-bs-dismiss="modal">Cancel</button></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Confirm and Withdraw</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>

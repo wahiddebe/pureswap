@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ps-tes</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div class="cashback-notif">
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <div class="devider-nav"></div>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                    <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
+                                <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
+                        </div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div>
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <ul class="navbar-nav my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fund-analysis.html">Fund Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="referal.html">Referral</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
+        <div class="bg-white rounded-5 gap-2 p-4">
+            <div class="d-flex flex-column justify-content-between gap-4 flex-lg-row align-items-lg-center mb-4"><a class="text-decoration-none d-flex align-items-center gap-3" href="contact.html">
+                    <p class="fs-5 text-heading fw-medium">Notifications</p>
+                </a>
+                <div class="d-flex align-items-center gap-2"><button class="btn btn-sm d-flex justify-content-center align-items-center px-3 py-2 btn-outline-soft-200 text-heading fs-7" type="button"><span>Mark all as read</span></button><button class="btn btn-sm d-flex justify-content-center align-items-center gap-2 px-3 py-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"><span>Clear all notifications</span></button></div>
+            </div>
+            <div class="d-flex flex-column gap-2 mb-4">
+                <h1 class="mb-1 fs-7 fw-medium text-sub-500">Action Required</h1>
+                <div class="d-flex flex-column gap-2">
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon notif-icon exchange"></span><span class="notif-edge-icon pause"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Your exchange order&nbsp;&nbsp;<span><a class="text-decoration-none" href="#">GH35uu7ZT</a></span><span>&nbsp;has been put on hold</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon ticket"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Support ticket with the ID&nbsp;<span><a class="text-decoration-none" href="#">GF289Gc33</a></span><span>&nbsp;has just been answered</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-2 mb-4">
+                <h1 class="mb-1 fs-7 fw-medium text-sub-500">Today</h1>
+                <div class="d-flex flex-column gap-2">
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon key"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">A login has been recognized at 16:14, 3rd Feb 2025</h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap white"><span class="notif-icon exchange"></span><span class="notif-edge-icon add"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">An exchange order has been created for&nbsp;<span><a class="text-decoration-none" href="#">1.47824177</a></span><span>&nbsp;BTC to&nbsp;</span><span><a class="text-decoration-none" href="#">222.41798108</a></span><span>&nbsp;ETH</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap white"><span class="notif-icon user"></span><span class="notif-edge-icon add-green"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Support ticket with the ID&nbsp;<span><a class="text-decoration-none" href="#">GF289Gc33</a></span><span>&nbsp;has just been answered</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="mb-2 fs-8">A new user has just registered with your referral link named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-2 mb-4">
+                <h1 class="mb-1 fs-7 fw-medium text-sub-500">Last Week</h1>
+                <div class="d-flex flex-column gap-2">
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon notif-icon coins"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">You have just received a new commission of&nbsp;<span><a class="text-decoration-none" href="#">211.17451078</a></span><span>&nbsp;TKN</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">A new user has just registered with your referral link named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon crown"></span><span class="notif-edge-icon up"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Congratulations! You have reached a new referral tier</h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="mb-2 fs-8">Your status is now ELITE</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap yellow"><span class="notif-icon notif-icon exchange"></span><span class="notif-edge-icon loading"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Your Fund Analysis is processing for the address TXID&nbsp;<span><a class="text-decoration-none" href="#">bc1naf89eh32n7o84b487wogb487bg249</a></span><span>&nbsp;on Bitcoin Network</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap yellow"><span class="notif-icon chart"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Your Fund Analysis is completed for the address TXID&nbsp;<span><a class="text-decoration-none" href="#">bc1naf89eh32n7o84b487wogb487bg249</a></span><span>&nbsp;on Bitcoin Network</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon shield"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">You have successfully activated&nbsp;<span><a class="text-decoration-none" href="#"> Two-Factor Authentication</a></span><span>&nbsp;for your account</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon shield"></span><span class="notif-edge-icon close"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                        <h1 class="fs-7 fw-medium">You have successfully&nbsp;<span><a class="text-decoration-none text-danger" href="#">deactivated Two-Factor Authentication</a></span><span>&nbsp;for your account</span></h1>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon ticket"></span><span class="notif-edge-icon add"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">You have successfully created a support ticket with the ID&nbsp;&nbsp;<span><a class="text-decoration-none" href="#">GF289Gc33</a></span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap unread">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon ticket"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Support ticket with the ID&nbsp;<span><a class="text-decoration-none" href="#">GF289Gc33</a></span><span>&nbsp;has just been answered</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon ticket"></span><span class="notif-edge-icon archive"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">Support ticket with the ID&nbsp;<span><a class="text-decoration-none" href="#">GF289Gc33 </a></span><span>&nbsp;has just been closed</span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold fs-7" href="#">View Ticket</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                    <div class="rounded-3 p-2 notif-wrap">
+                        <div class="rounded-3 d-flex flex-column justify-content-between gap-3 flex-lg-row align-items-lg-center ps-1 pe-1 pe-lg-3 py-1">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="notif-icon-wrap blue"><span class="notif-icon lock"></span><span class="notif-edge-icon check"></span></div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-start gap-2 justify-content-lg-start align-items-lg-center mb-2">
+                                        <h1 class="fs-7 fw-medium">You have successfully&nbsp;<span><a class="text-decoration-none" href="#">changed your password</a></span></h1>
+                                        <div class="bg-danger rounded-circle p-1 mark-notif"></div>
+                                    </div>
+                                    <p class="d-none mb-2 fs-8">Reason: Amount sent is too small. Please follow the instructions in the order page <br>&nbsp;named “CoinMarketCap” – Your referral count is now 247</p>
+                                    <div class="d-flex align-items-center gap-1 fs-8 text-soft-400">
+                                        <p>3 February 2025</p><span class="dot-notif-date"></span>
+                                        <p>3 February 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center gap-3"><a class="fw-semibold d-none fs-7" href="#">View Order</a><button class="btn rounded-circle d-flex justify-content-center align-items-center p-2 btn-outline-soft-200 text-heading fs-7" type="button" data-bs-target="#modal-1" data-bs-toggle="modal"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/trash.svg"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pt-4 px-4 px-lg-4_5 pt-lg-4_5"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body text-center d-flex flex-column justify-content-center pt-0 pb-4 px-4 px-lg-4_5 gap-3 pb-lg-4_5 gap-3">
+                        <div><img src="../assets/img/dashboard/3d-realistic-cross-checkmark-sign-vector-illustration%201.svg">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <p class="fs-5 text-heading fw-medium">All Notification</p>
+                                <p class="col-lg-8">All Notification will be deleted from our database as soon as you clear all notification, this action cannot be undone.</p>
+                            </div>
+                        </div>
+                        <div class="row gy-3 gy-lg-0 pt-0 pt-lg-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-outline-soft-200 text-heading" type="button" data-bs-dismiss="modal">Cancel</button></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Clear All Notification</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>

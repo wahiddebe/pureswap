@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pure Swap</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <section class="d-flex min-vh-100 bg-auth">
+        <div class="d-flex w-100 flex-column justify-content-center align-items-stretch flex-lg-row rounded-5" style="overflow: hidden;">
+            <div class="text-center bg-white d-flex h-100 flex-column justify-content-between align-items-center p-5 col-lg-6 gap-4">
+                <div class="align-self-start"><a class="text-decoration-none d-flex align-items-center gap-3" href="#"><img src="assets/img/arrow-left.svg">
+                        <p class="fs-6_5 text-heading fw-medium">Back</p>
+                    </a></div>
+                <div class="text-center d-flex w-100 flex-column justify-content-center gap-4_5">
+                    <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
+                    <div>
+                        <h2 class="mb-2">Create an account</h2>
+                        <p class="fs-7">Choose a random username for your account or generate one</p>
+                    </div>
+                    <div class="w-100">
+                        <form class="d-flex flex-column">
+                            <div class="input-group mb-3"><input class="form-control border-end-0" type="text" id="username-generate-input"><span class="text-primary bg-white input-group-text border-start-0" id="generate-username" onclick="generateUsername()">Generate</span></div><button class="btn btn-primary mt-4 mb-4" type="button">Next</button><a class="fs-5 text-decoration-none mb-2 fs-7 fw-medium" href="index.html">Skip and sign in with secret phrase only</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <p class="fs-6 text-start mb-3 text-heading fw-medium">Choose Username</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="w-25 sign-up-bar active"></div>
+                        <div class="w-25 sign-up-bar"></div>
+                        <div class="w-25 sign-up-bar"></div>
+                        <div class="w-25 sign-up-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex flex-column p-4_5 col-6" style="background: url(&quot;assets/img/Frame%201000006151.png&quot;) bottom / contain no-repeat, #16336b;">
+                <div class="d-xl-flex w-100 justify-content-xl-center align-items-xl-center mb-4_5"><img class="img-fluid" src="assets/img/Group9.svg"></div>
+                <div class="mb-4">
+                    <h2 class="text-white mb-3">Dashboard Access</h2>
+                    <p class="text-white fs-6_5">Create an account with SmartSwap to access all features</p>
+                </div>
+                <div class="row gy-2">
+                    <div class="col-6">
+                        <div class="fw-normal text-white d-flex align-items-lg-center gap-3"><img src="assets/img/circle-check-filled.svg">
+                            <p>Access our affiliate program</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-normal text-white d-flex align-items-lg-center gap-3"><img src="assets/img/circle-check-filled.svg">
+                            <p>Earn drops for every exchange</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-normal text-white d-flex align-items-lg-center gap-3"><img src="assets/img/circle-check-filled.svg">
+                            <p>Perform Fund Analysis</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fw-normal text-white d-flex align-items-lg-center gap-3"><img src="assets/img/circle-check-filled.svg">
+                            <p>Upgrade your level for more features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

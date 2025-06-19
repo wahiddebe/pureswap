@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ps-tes</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="../assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div class="cashback-notif">
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <div class="devider-nav"></div>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                    <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
+                                <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
+                        </div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div>
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <ul class="navbar-nav my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fund-analysis.html">Fund Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="referal.html">Referral</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
+        <div class="bg-white rounded-4 mb-4">
+            <div class="p-4"><a class="fs-4 fw-semibold text-decoration-none d-flex align-items-center mb-4 text-heading" href="fund-analysis.html"><img class="img-fluid me-2" width="24" height="24" src="../assets/img/arrow-left.svg"><span>Fund Quality Results</span></a>
+                <div class="d-flex flex-column gap-4 flex-lg-row mb-4">
+                    <div class="d-flex flex-column gap-2">
+                        <h1 class="fs-6_5">Address / Transaction</h1><button class="btn bg-white border-0 d-flex justify-content-between align-items-center gap-2 p-0 fs-7" id="copy-link-button-1" type="button" onclick="copy_link_all(&#39;bc1aiohfu9anveuiv89h4qt98gh98h3hq89fh9&#39;,&#39;copy-link-button-1&#39;,&#39;copy-link-button-1&#39;)" onmouseout=""><span class="text-nowrap text-truncate" id="copy-link-button-span-1">bc1aiohfu9anveuiv89h4qt98gh98h3hq89fh9</span><img class="border-0 p-1 border-soft-200" src="../assets/img/copy.svg"></button>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h1 class="fs-6_5">Blockchain</h1>
+                        <div class="d-flex align-items-center gap-2 fs-7"><img width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg" style="width: 20px;height: 20px;"><span>Bitcoin</span></div>
+                    </div>
+                </div>
+                <div class="row align-items-stretch">
+                    <div class="col col-lg-4">
+                        <div class="rounded-4 p-4 bg-weak">
+                            <h1 class="mb-3 fs-6_5">Address Result</h1><div class="chart-relative position-relative mb-3">
+  <canvas id="myChart"></canvas>      
+  <div class="chart-absolute-center text-center">
+    <p class='chart-title text-heading fw-semibold'>30%</p>
+  </div>
+</div>
+
+                            <div class="text-center">
+                                <h1 class="mb-2 fs-7 fw-medium">High Risk</h1>
+                                <p class="fs-8">*where 100% reflects low-risk funds, and 0% reflects illicit funds</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-8 d-flex">
+                        <div class="rounded-4 d-flex overflow-hidden flex-column p-4 bg-weak">
+                            <h1 class="mb-3 fs-6_5">Balance</h1>
+                            <h1 class="fs-4 mb-1">0.105226 BTC</h1>
+                            <p>$9994.07</p>
+                            <div class="overflow-hidden"><img width="1216" height="2" src="../assets/img/dashboard/Vector%2021.svg"></div>
+                            <div class="row gy-4">
+                                <div class="col col-lg-4">
+                                    <div>
+                                        <p class="mb-2 fs-7">Total Received</p>
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <h1 class="fs-6 fw-medium">0.1 BTC</h1><img class="img-fluid" width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg">
+                                        </div>
+                                        <p class="mb-2 fs-7 fw-medium">$9,877.51</p>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-4">
+                                    <div>
+                                        <p class="mb-2 fs-7">Total Sent</p>
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <h1 class="fs-6 fw-medium">0.0032 BTC</h1><img class="img-fluid" width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg">
+                                        </div>
+                                        <p class="mb-2 fs-7 fw-medium">$316.08</p>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-4">
+                                    <div>
+                                        <p class="mb-2 fs-7">Total Volume</p>
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <h1 class="fs-6 fw-medium">25,32 BTC</h1><img class="img-fluid" width="24" height="24" src="../assets/img/coin/Coin%20Logo.svg">
+                                        </div>
+                                        <p class="mb-2 fs-7 fw-medium">$2,500,984.77</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="overflow-hidden"><img width="1216" height="2" src="../assets/img/dashboard/Vector%2021.svg"></div>
+                </div>
+                <div class="text-center d-flex justify-content-end align-items-center gap-3 p-4"><a class="btn btn-outline-soft-200 text-heading" role="button" href="index.html">Back to Dashboard</a><a class="btn btn-primary" role="button" href="fund-analysis.html">New Analysis</a></div>
+            </div>
+        </div>
+        <div class="bg-white rounded-5 p-4">
+            <div class="mb-4">
+                <h1 class="fs-4 mb-2">Fund Quality Score Explanation</h1>
+                <p class="mb-4">The score estimates the likelihood that an address or transaction is linked to illegal activities. It ranges from 0% (Low Risk) to 100% (High Risk).<br>Based on this score, the risk is divided into three categories:</p>
+                <div class="row gy-4">
+                    <div class="col-12 col-lg-4 d-flex">
+                        <div class="text-center border rounded-4 border-1 d-flex justify-content-center p-4 border-soft-200">
+                            <div><div class="chart-relative position-relative mb-3">
+  <canvas id="highRisk"></canvas>      
+  <div class="chart-absolute-center text-center">
+    <p class='chart-title text-heading fw-semibold'> <20% </p>
+  </div>
+</div>
+
+                                <div class="mb-3">
+                                    <h1 class="mb-2 fs-6_5 fw-medium">High Risk</h1>
+                                    <p>Transfers from this wallet have a very high chance of being blocked by exchanges or other services due to strong ties to illicit activities.</p>
+                                </div>
+                                <div>
+                                    <p class="fs-7 fw-medium"><span class="text-heading">Do not send funds</span>&nbsp;from this wallet to centralized platforms like Binance or Coinbase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex">
+                        <div class="text-center border rounded-4 border-1 d-flex justify-content-center p-4 border-soft-200">
+                            <div><div class="chart-relative position-relative mb-3">
+  <canvas id="midRisk"></canvas>      
+  <div class="chart-absolute-center text-center">
+    <p class='chart-title text-heading fw-semibold'> <50% </p>
+  </div>
+</div>
+
+                                <div class="mb-3">
+                                    <h1 class="mb-2 fs-6_5 fw-medium">Mid Risk</h1>
+                                    <p>There is a moderate chance that transfers from this wallet could be flagged, delayed, or blocked, and you may be asked to provide additional KYC information.</p>
+                                </div>
+                                <div>
+                                    <p class="fs-7 fw-medium"><span class="text-heading">Proceed with caution</span>&nbsp;when sending funds from this wallet and be prepared for potential complications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex">
+                        <div class="text-center border rounded-4 border-1 d-flex justify-content-center p-4 border-soft-200">
+                            <div><div class="chart-relative position-relative mb-3">
+  <canvas id="lowRisk"></canvas>      
+  <div class="chart-absolute-center text-center">
+    <p class='chart-title text-heading fw-semibold'> >80% </p>
+  </div>
+</div>
+
+                                <div class="mb-3">
+                                    <h1 class="mb-2 fs-6_5 fw-medium">Low Risk</h1>
+                                    <p>Transfers from this wallet are unlikely to be blocked or flagged and should proceed smoothly.</p>
+                                </div>
+                                <div>
+                                    <p class="fs-7 fw-medium"><span class="text-heading">You can safely send funds</span>&nbsp;from this wallet to most platforms without expecting issues.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="fs-4 mb-2">How are scores calculated?</h1>
+                <p class="mb-4">The score is calculated by analyzing factors that suggest potential involvement in illicit activities. These factors reflect patterns that centralized exchanges (e.g., Binance, Coinbase) and reputable services monitor for compliance. Some key factors include:</p>
+                <div class="row">
+                    <div class="col col-lg-4 d-flex">
+                        <div class="border rounded-4 border-1 d-flex overflow-hidden flex-column border-soft-200">
+                            <div class="border p-4 border-bottom-1 border-soft-200">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <div class="bg-danger rounded-circle p-2"></div>
+                                        <h1 class="fs-6_5 fw-medium">High Risk Factors</h1>
+                                    </div>
+                                    <p>These indicate strong ties to illicit activities, often triggering immediate flags.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-4 p-4">
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">Darknet Market Links:</h1>
+                                    <p>Direct or indirect transactions with darknet marketplaces involved in illegal goods trading.</p>
+                                </div>
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">Sanctioned Addresses:</h1>
+                                    <p>Wallets linked to OFAC, UN, or other sanctions lists, indicating potential terrorist financing or prohibited entities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 d-flex">
+                        <div class="border rounded-4 border-1 d-flex overflow-hidden flex-column border-soft-200">
+                            <div class="border p-4 border-bottom-1 border-soft-200">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <div class="bg-warning rounded-circle p-2"></div>
+                                        <h1 class="fs-6_5 fw-medium">Mid Risk Factors</h1>
+                                    </div>
+                                    <p>These suggest moderate risk, often due to weaker controls or suspicious patterns.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-4 p-4">
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">Crypto ATM Usage:</h1>
+                                    <p>Transactions via crypto ATMs with minimal KYC, vulnerable to cash-based laundering.</p>
+                                </div>
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">P2P Platforms:</h1>
+                                    <p>Trades on peer-to-peer platforms (e.g., LocalBitcoins) with inconsistent KYC enforcement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 d-flex">
+                        <div class="border rounded-4 border-1 d-flex overflow-hidden flex-column border-soft-200">
+                            <div class="border p-4 border-bottom-1 border-soft-200">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <div class="bg-success rounded-circle p-2"></div>
+                                        <h1 class="fs-6_5 fw-medium">Low Risk Factors</h1>
+                                    </div>
+                                    <p>These are associated with compliant, transparent activities, typically on regulated platforms.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-4 p-4">
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">Reputable Exchange Transactions:</h1>
+                                    <p>Trades on licensed exchanges like Binance with strong KYC/AML policies.</p>
+                                </div>
+                                <div>
+                                    <h1 class="fs-6 mb-2 fw-medium">Full KYC Compliance:</h1>
+                                    <p>Wallets linked to verified identities (e.g., passport, address) via robust KYC processes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+    <script src="../assets/js/schart.min.js"></script>
+</body>
+
+</html>

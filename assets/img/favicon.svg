@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8319_14541)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.6001 12V24.8H5.6001C6.02031 24.8 6.43643 24.8828 6.82471 25.0436C7.21289 25.2044 7.56572 25.4401 7.86279 25.7373C8.15996 26.0344 8.39571 26.3872 8.55655 26.7754C8.71728 27.1637 8.8001 27.5798 8.8001 28V32H18.4001L30.4001 20V7.2H26.4001C25.9799 7.2 25.5638 7.11724 25.1755 6.95642C24.7873 6.79561 24.4345 6.55989 24.1374 6.26274C23.8403 5.9656 23.6045 5.61282 23.4436 5.22458C23.2829 4.83635 23.2001 4.42024 23.2001 4V0H13.6001L1.6001 12ZM15.2001 24H9.6001V15.2L16.8001 8H22.4001V16.8L15.2001 24Z" fill="#3E7EFF"></path>
+</g>
+<defs>
+<clipPath id="SvgjsClipPath1001">
+<rect width="28.8" height="32" fill="white" transform="translate(1.6001)"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

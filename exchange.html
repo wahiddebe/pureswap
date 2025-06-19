@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pure Swap</title>
+    <meta name="" content="">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/logo-nav.svg"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto my-3 my-lg-0 gap-3 gap-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="affiliate.html">Affiliate Program</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blogs.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul><button class="btn btn-primary btn-sm" type="button">Login</button>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 p-4 p-lg-7" style="background: url(&quot;assets/img/BG-HERO-LANDING.svg&quot;) bottom / contain no-repeat;">
+        <div class="d-flex flex-column gap-4 flex-lg-row mb-7">
+            <div class="d-flex flex-column col-lg-6">
+                <div class="d-flex align-items-center gap-2 mb-4"><img src="assets/img/logo.svg">
+                    <h1 class="text-uppercase text-primary fs-6_5">swap crypto with Pure swap</h1>
+                </div>
+                <div class="mb-4">
+                    <h1 class="display-2 mb-4" style="letter-spacing: 0;">&nbsp;Exchange&nbsp;<span class="hero-heading-gradient">{Input} to {Output}</span>&nbsp;</h1>
+                    <p class="mb-4 fs-6_5">Swap BNB to USDT privately online starting with 50 USD</p>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="24" height="24" src="assets/img/check.svg">
+                            <p class="text-primary fs-6_5 fw-medium">Private</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="24" height="24" src="assets/img/check.svg">
+                            <p class="text-primary fs-6_5 fw-medium">Lighting Fast</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2"><img class="img-fluid" width="24" height="24" src="assets/img/check.svg">
+                            <p class="text-primary fs-6_5 fw-medium">Secure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative flex-grow-1">
+                <div class="bg-white border rounded-4 p-3 p-lg-4 col-12">
+                    <div>
+                        <div class="position-relative d-flex flex-column justify-content-center align-items-center mb-4">
+                            <div class="row gx-2 gy-2 align-self-stretch">
+                                <div class="col-12">
+                                    <div class="border rounded-4 p-1">
+                                        <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Send</span>
+                                            <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                                <div>
+                                                    <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-1" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32">
+                                                        <div>
+                                                            <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                    <option value="bitcoin" selected="">BTC</option>
+                                                                    <option value="etherium">ETH</option>
+                                                                </select>
+                                                                <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Bitcoin</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-yellow">BTC</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="20"><span class="fw-medium">$1856105.23</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border rounded-4 p-1">
+                                        <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Get</span>
+                                            <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                                <div>
+                                                    <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-2" src="assets/img/coin/Coin%20Logo-1.svg" width="32" height="32">
+                                                        <div>
+                                                            <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                    <option value="bitcoin">BTC</option>
+                                                                    <option value="etherium" selected="">ETH</option>
+                                                                </select>
+                                                                <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Ethereum</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-blue">ETH</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="1002.728"><span class="fw-medium">$1796133.90</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-absolute d-flex justify-content-center align-items-center">
+                                <div class="rounded-2 p-2 bg-weak"><img class="img-fluid d-none d-lg-block" width="25" height="24" src="assets/img/arrow-swap.svg"><img class="img-fluid d-block d-lg-none" width="18" height="18" src="assets/img/dashboard/chevron-right.svg" style="transform: rotate(90deg);"></div>
+                            </div>
+                        </div>
+                        <form class="d-flex flex-column gap-4">
+                            <div class="rounded-3 d-flex justify-content-between align-items-center gap-3 px-3 py-2 bg-weak fw-medium"><span class="my-1">Exchange Rate</span>
+                                <div class="d-flex align-items-center"><span>1 BTC</span><span>&nbsp;=&nbsp;</span><span>52,47 ETH</span></div>
+                            </div>
+                            <div class="d-flex flex-column align-items-stretch"><a class="btn btn-primary" role="button" href="dashboard/exchange-2.html" data-bs-target="#modal-1" data-bs-toggle="modal">Exchange</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 pt-lg-7">
+            <div class="text-center d-flex flex-column align-items-center mt-7">
+                <h5 class="text-uppercase text-primary mb-3 fs-6_5">why affiliate</h5>
+                <h1 class="display-3 mb-4 col-lg-9">Why Join our Affiliate Program?</h1>
+                <p class="col-lg-8">It’s more than just earning commissions—it’s about being part of a community shaping the future of cross-chain exchanges. Here’s what you’ll gain as a Pure Swap affiliate:</p>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <section class="pb-4 pb-lg-7 px-4 px-lg-7">
+        <div class="overflow-scroll">
+            <div class="table-exc">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-nowrap">FROM</th>
+                            <th class="text-nowrap">TO</th>
+                            <th class="text-nowrap">PRICE</th>
+                            <th class="text-nowrap"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Bitcoin</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo-1.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Etherium</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle"><span class="text-heading fw-medium fs-6_5">0.0199643 BTC</span></td>
+                            <td class="text-nowrap align-middle"><a class="btn btn-primary btn-sm" role="button" href="dashboard/exchange.html">Exchange</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Bitcoin</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo%2016.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Tether</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle"><span class="text-heading fw-medium fs-6_5">0,000010 BTC</span></td>
+                            <td class="text-nowrap align-middle"><a class="btn btn-primary btn-sm" role="button" href="dashboard/exchange.html">Exchange</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo%2016.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Tether</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center flex-nowrap gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo-3.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Binance Coin</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle"><span class="text-heading fw-medium fs-6_5">603,14 USDT</span></td>
+                            <td class="text-nowrap align-middle"><a class="btn btn-primary btn-sm" role="button" href="dashboard/exchange.html">Exchange</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo-3.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Binance Coin</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo-6.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>TRON</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle"><span class="text-heading fw-medium fs-6_5">0,00040 BNB</span></td>
+                            <td class="text-nowrap align-middle"><a class="btn btn-primary btn-sm" role="button" href="dashboard/exchange.html">Exchange</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo-4.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Polygon</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle">
+                                <div class="d-flex align-items-center gap-2"><img class="img-fluid" src="assets/img/coin/Coin%20Logo%2016.svg" width="32" height="32">
+                                    <div>
+                                        <div class="d-flex flex-column justify-content-start align-items-start">
+                                            <div class="d-flex align-items-center gap-2 fs-6_5 fw-medium text-heading"><span>Tether</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-nowrap align-middle"><span class="text-heading fw-medium fs-6_5">4,56 MATIC</span></td>
+                            <td class="text-nowrap align-middle"><a class="btn btn-primary btn-sm" role="button" href="dashboard/exchange.html">Exchange</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-7">
+            <h5 class="text-uppercase text-primary mb-3 fs-6_5">what we exchange</h5>
+            <h1 class="display-3 mb-4 col-lg-9">Why exchange BNB to USDT</h1>
+        </div>
+        <div class="row gy-4">
+            <div class="col-12">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%2037.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20372.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="bg-white rounded-4 position-relative d-flex h-100 overflow-hidden flex-column justify-content-between" style="min-height: 484px;box-shadow: 0px 12px 24px rgba(0,0,0,0.04);">
+                    <div class="d-flex overflow-hidden flex-grow-1 justify-content-center align-items-start" style="height: 300px;"><img class="object-fit-cover w-100" src="assets/img/Frame%20373.svg"></div>
+                    <div class="z-3 p-4_5">
+                        <h1 class="fs-2 mb-3" ultimate="" privacy="">Ultimate Privacy</h1>
+                        <p class="fs-6_5">Your peace of mind matters. Every BNB to USDT swap on SmartSwap is erased from our database 24 hours after completion, ensuring your data stays private.</p>
+                    </div>
+                    <div class="position-absolute w-100 h-100" style="background: linear-gradient(rgba(255,255,255,0), white 60%);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center rounded-5 d-flex flex-column justify-content-center align-items-stretch p-7 mb-5 mb-lg-7 mx-4 gap-4_5" style="background: url(&quot;assets/img/bg-squares.svg&quot;) bottom / contain no-repeat, #3e7eff;">
+        <div class="px-0 px-lg-5">
+            <h1 class="text-uppercase fw-semibold text-white mb-3 fs-6_5">how to exchange</h1>
+            <h1 class="display-3 text-white mb-4">How to Exchange<br>BNB to USDT</h1>
+        </div>
+        <div class="align-self-center col-lg-8">
+            <div class="row gy-3">
+                <div class="col-lg-6">
+                    <div class="fs-6 text-start text-white rounded-4 d-flex flex-column justify-content-between align-items-stretch gap-3 p-4 fw-medium bg-white-15" style="min-height: 354px;">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-center text-primary bg-white rounded-4 d-flex justify-content-center align-items-center p-3" style="width: 56px;height: 56px;">
+                                <h1 class="fs-4 text-primary">1</h1>
+                            </div>
+                            <h1 class="text-white" style="color: rgb(255,255,255);font-size: 128px;line-height: 100%;opacity: 0.10;">1</h1>
+                        </div>
+                        <div>
+                            <h1 class="fs-4 text-white mb-2">Set up your exchange</h1>
+                            <p>Pick {inputCurrency} to send and {outputCurrency} to receive from SmartSwap’s wide range of supported currencies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fs-6 text-start text-white rounded-4 d-flex flex-column justify-content-between align-items-stretch gap-3 p-4 fw-medium bg-white-15" style="min-height: 354px;">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-center text-primary bg-white rounded-4 d-flex justify-content-center align-items-center p-3" style="width: 56px;height: 56px;">
+                                <h1 class="fs-4 text-primary">2</h1>
+                            </div>
+                            <h1 class="text-white" style="color: rgb(255,255,255);font-size: 128px;line-height: 100%;opacity: 0.10;">2</h1>
+                        </div>
+                        <div>
+                            <h1 class="fs-4 text-white mb-2">Enter your addresses</h1>
+                            <p>Enter your {outputCurrency} wallet address for delivery and an {inputCurrency} refund address for added security.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fs-6 text-start text-white rounded-4 d-flex flex-column justify-content-between align-items-stretch gap-3 p-4 fw-medium bg-white-15" style="min-height: 354px;">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-center text-primary bg-white rounded-4 d-flex justify-content-center align-items-center p-3" style="width: 56px;height: 56px;">
+                                <h1 class="fs-4 text-primary">3</h1>
+                            </div>
+                            <h1 class="text-white" style="color: rgb(255,255,255);font-size: 128px;line-height: 100%;opacity: 0.10;">3</h1>
+                        </div>
+                        <div>
+                            <h1 class="fs-4 text-white mb-2">Deposit {inputCurrency}</h1>
+                            <p>Deposit your {inputCurrency} to the provided SmartSwap address to kickstart your exchange process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fs-6 text-start text-white rounded-4 d-flex flex-column justify-content-between align-items-stretch gap-3 p-4 fw-medium bg-white-15" style="min-height: 354px;">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-center text-primary bg-white rounded-4 d-flex justify-content-center align-items-center p-3" style="width: 56px;height: 56px;">
+                                <h1 class="fs-4 text-primary">4</h1>
+                            </div>
+                            <h1 class="text-white" style="color: rgb(255,255,255);font-size: 128px;line-height: 100%;opacity: 0.10;">4</h1>
+                        </div>
+                        <div>
+                            <h1 class="fs-4 text-white mb-2">Receive {outputCurrency}</h1>
+                            <p>Relax as your swap processes—your {outputCurrency} arrives in your wallet once confirmed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-7">
+            <h5 class="text-uppercase text-primary mb-3 fs-6_5">Chart</h5>
+            <h1 class="display-3 mb-4 col-lg-9">BNB to USDT Live Price Chart</h1>
+        </div>
+        <div class="border rounded-4 p-4">
+            <div class="d-flex justify-content-between mb-4">
+                <div>
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <div><img class="img-fluid" width="25" height="24" src="assets/img/coin/Coin%20Logo%2016.svg"><img class="img-fluid" width="24" height="24" src="assets/img/coin/Coin%20Logo-3.svg" style="margin-left: -12px;margin-top: 20px;"></div><span class="text-heading fs-8 fw-medium">Binance Coin</span><span class="fs-8 fw-medium">/</span><span class="text-heading fs-8 fw-medium">TetherUS</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <h1 class="fs-4">604.89 USDT</h1><img class="img-fluid" width="12" height="12" src="assets/img/chevron-upp.svg"><span class="fw-semibold text-success fs-8">+2.32%</span>
+                    </div>
+                </div>
+                <div class="d-flex gap-3">
+                    <div class="rounded-3 d-flex align-self-start bg-weak" style="padding: 2px;"><button class="fw-semibold rounded-3 border-0 d-flex justify-content-center align-items-center p-2 text-sub-500 fs-8 bg-weak btn-chart" type="button">1D</button><button class="fw-semibold rounded-3 border-0 d-flex justify-content-center align-items-center p-2 text-sub-500 fs-8 bg-weak btn-chart" type="button">7D</button><button class="fw-semibold rounded-3 border-0 d-flex justify-content-center align-items-center p-2 text-sub-500 fs-8 bg-weak btn-chart" type="button">1M</button><button class="active fw-semibold rounded-3 border-0 d-flex justify-content-center align-items-center p-2 text-sub-500 fs-8 bg-weak btn-chart" type="button">1Y</button><button class="fw-semibold rounded-3 border-0 d-flex justify-content-center align-items-center p-2 text-sub-500 fs-8 bg-weak btn-chart" type="button">ALL</button></div>
+                    <div class="border-end border-soft-200"></div>
+                    <div><button class="bg-white border rounded-3 d-flex justify-content-center align-items-center p-2" type="button"><img class="img-fluid" width="18" height="18" src="assets/img/maximize.svg"></button></div>
+                </div>
+            </div><canvas id="myChart" class="w-100" style=""></canvas>
+        </div>
+    </section>
+    <div class="text-center d-flex flex-column justify-content-center align-items-stretch gap-4 p-7 mb-5 mb-lg-7" style="background: url(&quot;assets/img/bg-squares.svg&quot;) bottom / contain no-repeat, #1A1A1A;"><img class="align-self-center mt-4_5" src="assets/img/logo-dark.svg" style="max-width: 150px;">
+        <div class="mb-2 px-0 px-lg-5">
+            <h1 class="display-3 cta-heading">Exchange BNB to USDT without any hassle</h1>
+        </div><a class="btn btn-primary align-self-center mb-4_5" role="button" href="exchange.html">Start Exchanging</a>
+    </div>
+    <section class="min-vh-100 p-4 p-lg-7">
+        <div class="text-center d-flex flex-column align-items-center mb-4_5">
+            <h5 class="text-primary mb-3 fs-6_5">FAQs</h5>
+            <h1 class="display-3 col-lg-8">You Got Questions? We Got Answers!</h1>
+        </div>
+        <div class="mb-4_5">
+            <div class="accordion border-0 d-flex flex-column gap-4" role="tablist" id="accordion-2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="true" aria-controls="accordion-2 .item-1">What is SmartSwap?</button></h2>
+                    <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Do I need to create an account to use SmartSwap?</button></h2>
+                    <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">How does SmartSwap work?</button></h2>
+                    <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Is SmartSwap secure?</button></h2>
+                    <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-5" aria-expanded="false" aria-controls="accordion-2 .item-5">How do I trade on SmartSwap</button></h2>
+                    <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-2">
+                        <div class="accordion-body">
+                            <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="mb-3 fs-6_5 text-heading fw-medium">Have more question in mind?</p><button class="btn btn-sm btn-outline-soft-200 text-heading" type="button">See all FAQs</button>
+        </div>
+    </section>
+    <footer class="d-flex flex-column p-4 p-lg-7 gap-4 gap-lg-7 footer-swap">
+        <div>
+            <div class="row gy-3 gy-lg-0">
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons.svg">
+                            <p>X/Twitter</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-1.svg">
+                            <p>YouTube</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-2.svg">
+                            <p>Discord</p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-3"><a class="text-decoration-none" href="#">
+                        <div class="fw-semibold bg-white d-flex justify-content-center align-items-center p-3 footer-medsos-wrap gap-3 text-heading fs-6_5"><img src="assets/img/social-icons-3.svg" width="21" height="20">
+                            <p>Telegram</p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="row gy-3 gy-lg-0">
+            <div class="col-lg-3">
+                <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+            </div>
+        </div>
+        <hr class="m-0 bg-soft-200">
+        <div class="d-flex flex-column gap-4_5">
+            <div>
+                <p class="fw-semibold mb-3 fs-6_5 text-heading">Convert</p>
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="fw-semibold mb-3 fs-6_5 text-heading">Exchange Pairs</p>
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center text-sub-500">
+            <div class="d-flex align-items-center gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Legal</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Terms of Use</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Privacy Policy</a></div>
+            <p class="fs-6 text-sub-500 fw-medium">© 2025 Pure Swap. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/xchart.min.js"></script>
+</body>
+
+</html>
